@@ -1,0 +1,36 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lupetit <lupetit@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/11/13 15:54:20 by lupetit           #+#    #+#             */
+/*   Updated: 2024/11/19 10:07:13 by lupetit          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+void	ft_lstadd_front(t_list **lst, t_list *new)
+{
+	if (lst && new)
+	{
+		new->next = *lst;
+		*lst = new;
+	}
+}
+
+/*int main(void)
+{
+    t_list *lst = NULL;
+    char *str = "Salut les mecs";
+    
+    t_list *new = ft_lstnew(str);
+    ft_lstadd_front(&lst, new);
+    
+    printf("%s\n", (char *)lst->content);
+    free(lst);
+}*/
