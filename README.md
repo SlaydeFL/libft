@@ -33,7 +33,6 @@ The goal of this project is to create a personal library containing a set of fun
 │   ├── ft_mem*.c       # Memory management functions.
 │   ├── ft_str*.c       # String manipulation functions.
 │   ├── ft_lst*.c       # Linked list functions (bonus).
-├── obj/                # (Generated after compilation) Object files.
 ```
 
 ---
